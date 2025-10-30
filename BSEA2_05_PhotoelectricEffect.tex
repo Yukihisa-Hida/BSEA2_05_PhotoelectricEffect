@@ -322,11 +322,13 @@ $0.05\mathrm{V}$毎に電圧を上げてデータを記録し, 光電流が$1\ma
   \end{tabular}
 \end{table}
 
+更に, 表\ref{tb:blue-filter}, 表\ref{tb:yellow-filter}, 表\ref{tb:orange-filter}, 表\ref{tb:red-filter}の値を, 図（後掲）の片対数グラフにプロットした.
+
 
 
 \subsection{フィルタごとの振動数$\nu$と阻止電圧$V_{th}$の値}
 
-片対数グラフの数$\mathrm{nA}$前後のデータにおおよその直線を引き, $5\ \mathrm{nA}$, $2\ \mathrm{nA}$, $1\ \mathrm{nA}$をよぎる電圧（阻止電圧とする）を求め, 次の表\ref{tb:blocking-voltage}に示す.
+図の数$\mathrm{nA}$前後のデータにおおよその直線を引き, $5\ \mathrm{nA}$, $2\ \mathrm{nA}$, $1\ \mathrm{nA}$をよぎる電圧（阻止電圧とする）を求め, 次の表\ref{tb:blocking-voltage}に示す.
 
 \begin{table}[H]
   \centering
@@ -345,8 +347,53 @@ $0.05\mathrm{V}$毎に電圧を上げてデータを記録し, 光電流が$1\ma
   \end{tabular}
 \end{table}
 
-更に, 表\ref{tb:blocking-voltage}の値をグラフ上にプロットすると, 図3～6（後掲）のようになった.
+更に, 表\ref{tb:blocking-voltage}の値をグラフ上にプロットすると, 図3～5（後掲）のようになった.
 
+
+
+\subsection{プランク定数と仕事関数の決定}
+
+この図3～5から直線の傾き（$\alpha = h / e$）および切片（$\beta = -W / e$）を求め, これをもとにプランク定数$h$と仕事関数$W$を求め次の表\ref{tb:a-b-h-w}に示す.
+ただし, 電気素量$e = 1.602\times 10^{-19}\ \mathrm{C}$\cite{電気素量}とする.
+
+\begin{table}[H]
+  \centering
+  \caption{プランク定数$h$と仕事関数$W$の値}
+  \label{tb:a-b-h-w}
+  \begin{tabular}{cccccc}
+    \hline
+    & 傾き & 切片 & プランク定数 & 仕事関数 & 仕事関数 \\
+    & $\alpha = h / e$ & $\beta = -W / e$ & $h/\mathrm{Js}$ & $W/\mathrm{eV}$ & $W/\mathrm{J}$\\
+    \hline
+    $1\ \mathrm{nA}$ & $3.519\times10^{-15}$ & -1.633 & $5.637\times10^{-34}$ & 1.633 & 2.616 \\
+    $2\ \mathrm{nA}$ & $3.214\times10^{-15}$ & -1.546 & $5.149\times10^{-34}$ & 1.546 & 2.477 \\
+    $5\ \mathrm{nA}$ & $2.000\times10^{-15}$ & -0.900 & $3.204\times10^{-34}$ & 0.900 & 1.442 \\
+    \hline
+    平均値 & & & $4.663\times10^{-15}$ & 1.360 & 2.178 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+次に, プランク定数と仕事関数のそれぞれの標準不確かさ$\Delta\overline{h}$と$\Delta\overline{W}$を求める.
+なお, 標準不確かさは次式(\ref{eq:standard-uncertainty})を用いて求め, 表\ref{tb:standard-uncertainty}に示す.
+\begin{equation}
+  \Delta\overline{x} = \frac{\Delta x}{\sqrt{N}} = \sqrt{\frac{1}{N(N-1)}\sum_{i=1}^N(x_i - \overline{x})^2}
+  \label{eq:standard-uncertainty}
+\end{equation}
+
+\begin{table}[H]
+  \centering
+  \caption{プランク定数$h$と仕事関数$W$の標準不確かさ}
+  \label{tb:standard-uncertainty}
+  \begin{tabular}{cc}
+    \hline
+    $\overline{h}\pm\Delta\overline{h}$ & $\overline{W}\pm\Delta\overline{W}$ \\
+    $h/\mathrm{Js}$ & $W/\mathrm{eV}$ \\
+    \hline
+    $4.7\pm0.8\times10^{-34}$ & $1.36\pm0.23$ \\
+    \hline
+  \end{tabular}
+\end{table}
 
 
 
@@ -360,7 +407,7 @@ $0.05\mathrm{V}$毎に電圧を上げてデータを記録し, 光電流が$1\ma
 
 \begin{thebibliography}{99}
 
-  \bibitem{金属の密度} \url{https://www.eng-book.com/sample/pdf/P268.pdf}
+  \bibitem{電気素量} \url{https://w3e.kanazawa-it.ac.jp/math/physics/high-school_index/electricity_and_magnetism/electric_field/henkan-tex.cgi?target=/math/physics/high-school_index/electricity_and_magnetism/electric_field/elementary_charge.html&pcview=0}
 
 \end{thebibliography}
 
