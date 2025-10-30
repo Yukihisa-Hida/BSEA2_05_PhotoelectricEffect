@@ -322,13 +322,13 @@ $0.05\mathrm{V}$毎に電圧を上げてデータを記録し, 光電流が$1\ma
   \end{tabular}
 \end{table}
 
-更に, 表\ref{tb:blue-filter}, 表\ref{tb:yellow-filter}, 表\ref{tb:orange-filter}, 表\ref{tb:red-filter}の値を, 図（後掲）の片対数グラフにプロットした.
+更に, 表\ref{tb:blue-filter}, 表\ref{tb:yellow-filter}, 表\ref{tb:orange-filter}, 表\ref{tb:red-filter}の値を, 図2（後掲）の片対数グラフにプロットした.
 
 
 
 \subsection{フィルタごとの振動数$\nu$と阻止電圧$V_{th}$の値}
 
-図の数$\mathrm{nA}$前後のデータにおおよその直線を引き, $5\ \mathrm{nA}$, $2\ \mathrm{nA}$, $1\ \mathrm{nA}$をよぎる電圧（阻止電圧とする）を求め, 次の表\ref{tb:blocking-voltage}に示す.
+図2の数$\mathrm{nA}$前後のデータにおおよその直線を引き, $5\ \mathrm{nA}$, $2\ \mathrm{nA}$, $1\ \mathrm{nA}$をよぎる電圧（阻止電圧とする）を求め, 次の表\ref{tb:blocking-voltage}に示す.
 
 \begin{table}[H]
   \centering
@@ -353,8 +353,8 @@ $0.05\mathrm{V}$毎に電圧を上げてデータを記録し, 光電流が$1\ma
 
 \subsection{プランク定数と仕事関数の決定}
 
-この図3～5から直線の傾き（$\alpha = h / e$）および切片（$\beta = -W / e$）を求め, これをもとにプランク定数$h$と仕事関数$W$を求め次の表\ref{tb:a-b-h-w}に示す.
-ただし, 電気素量$e = 1.602\times 10^{-19}\ \mathrm{C}$\cite{電気素量}とする.
+この図3～5から直線の傾き（$\alpha = h / e$）及び切片（$\beta = -W / e$）を求め, これをもとにプランク定数$h$と仕事関数$W$を求め次の表\ref{tb:a-b-h-w}に示す.
+ただし, 電気素量$e = 1.602\times 10^{-19}\ \mathrm{C}$\cite{SI}とする.
 
 \begin{table}[H]
   \centering
@@ -390,7 +390,7 @@ $0.05\mathrm{V}$毎に電圧を上げてデータを記録し, 光電流が$1\ma
     $\overline{h}\pm\Delta\overline{h}$ & $\overline{W}\pm\Delta\overline{W}$ \\
     $h/\mathrm{Js}$ & $W/\mathrm{eV}$ \\
     \hline
-    $4.7\pm0.8\times10^{-34}$ & $1.36\pm0.23$ \\
+    $4.7\pm0.8\times10^{-15}$ & $1.36\pm0.23$ \\
     \hline
   \end{tabular}
 \end{table}
@@ -401,13 +401,54 @@ $0.05\mathrm{V}$毎に電圧を上げてデータを記録し, 光電流が$1\ma
 
 
 
+\subsection{プランク定数の測定値と文献値の比較}
+
+本実験におけるプランク定数$h$の測定値と文献値を次の表\ref{tb:h-value}に示す.
+
+\begin{table}[H]
+  \centering
+  \caption{プランク定数$h$の測定値と文献値}
+  \label{tb:h-value}
+  \begin{tabular}{ccc}
+    \hline
+    & 測定値 & 文献値\cite{SI} \\
+    \hline
+    $h/\mathrm{Js}$ & $4.7\pm0.8\times10^{-15}$ & $6.626\times10^{-15}$ \\
+    \hline
+  \end{tabular}
+\end{table}
+
+これより, 文献値が不確かさの範囲外であることが確認できた.
+
+
+
+\subsection{測定装置の不具合について}
+
+本実験で使用した測定装置において, 光電流値が他の装置と比較して著しく低い値を示すという問題が発生した.
+この影響により, 赤色フィルタにおける光電流$5\ \mathrm{nA}$での阻止電圧$V_{th}$を測定することができず,表\ref{tb:blocking-voltage}の該当箇所が欠損値となった.
+
+また, 実験後にこの不具合に気づき, 実験装置を3回再起動をしたが改善されなかった.
+しかし, 4度目の再起動後に光電流値は他の装置に近い値を示した.
+このことから, 本実験中に使用していた装置は, 何らかの理由で一時的な不具合を起こしていた可能性が高いと考えられる.
+
+
+
+\subsection{測定結果への影響の考察}
+
+もし装置が正常に動作し, より大きな光電流値が測定されていれば, 阻止電圧の値は図2および以後の結果が異なっていたと考えられる.
+図2において, より大きな光電流値が測定されたと考えると, 黄色フィルタの直線と青色フィルタの直線の角度差から, より阻止電圧の差が広がることがわかる.
+よって, 図3～5の直線の傾きはより大きくなり, 同時に切片はより小さくなる.
+これによりプランク定数は大きくなり, より文献値に近づくことが期待できる.
+
+
+
 \section{まとめ}
 
 
 
 \begin{thebibliography}{99}
 
-  \bibitem{電気素量} \url{https://w3e.kanazawa-it.ac.jp/math/physics/high-school_index/electricity_and_magnetism/electric_field/henkan-tex.cgi?target=/math/physics/high-school_index/electricity_and_magnetism/electric_field/elementary_charge.html&pcview=0}
+  \bibitem{SI} \url{https://japanknowledge.com/contents/common/si.html}
 
 \end{thebibliography}
 
